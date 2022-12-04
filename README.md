@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Stripe-billing is a plugin that allows a Stripe subscription customer to manage his billing infos, subscriptions and last invoices. Typical use case: you're a web agency or alike and you wish your customers to be able to manage their maintenance subscription without leaving Strapi.
+Stripe-billing is a Strapi plugin that allows a Stripe subscription customer to manage his billing infos, subscriptions and last invoices. Typical use case: you're a web agency or alike and you want your customers to be able to manage their maintenance subscription without leaving Strapi.
 
 ## Installation
 
@@ -33,7 +33,7 @@ STRIPE_CUSTOMER_ID=cus_XXXXXXXXXXXXXXXXX
 
 ### Enable plugin configuration
 
-Open `config/plugins.js` file (or create it if it's not there) and add the stripe-billing entry with the customerId. The minimal plugin's config will look as follow:
+Open the `config/plugins.js` file (or create it if it's not there) and add the stripe-billing entry with the customerId. The minimal plugin's config will look as follow:
 
 ```js
 module.exports = ({ env }) => ({
@@ -42,6 +42,7 @@ module.exports = ({ env }) => ({
     enabled: true,
     config: {
       customerId: env("STRIPE_CUSTOMER_ID"),
+    }
   },
   ...
 });
@@ -61,6 +62,7 @@ module.exports = ({ env }) => ({
       companyName: "ACME",
       companyDescription: "All your ACME's subscriptions infos are there.",
       companyLogo: "https://acme.com/img/logo.png",
+    }
   },
   ...
 });
