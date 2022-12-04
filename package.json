@@ -1,6 +1,6 @@
 {
   "name": "@surunnuage/stripe-billing",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Manage Stripe subscriptions customer's infos and bills directly from Strapi.",
   "strapi": {
     "name": "stripe-billing",
