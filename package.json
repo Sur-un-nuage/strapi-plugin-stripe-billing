@@ -1,0 +1,34 @@
+{
+  "name": "@surunnuage/stripe-billing",
+  "version": "1.0.0",
+  "description": "Manage Stripe subscriptions customer's infos and bills directly from Strapi.",
+  "strapi": {
+    "name": "stripe-billing",
+    "description": "Manage Stripe subscriptions customer's infos and bills directly from Strapi.",
+    "kind": "plugin",
+    "displayName": "My Subscriptions"
+  },
+  "dependencies": {
+    "stripe": "^11.1.0"
+  },
+  "peerDependencies": {
+    "@strapi/strapi": "^4.1.7"
+  },
+  "author": {
+    "name": "Thomas Poirier",
+    "email": "opendev@surunnuage.dev",
+    "url": "https://www.surunnuage.dev"
+  },
+  "maintainers": [
+    {
+      "name": "Sur un nuage .dev",
+      "email": "opendev@surunnuage.dev",
+      "url": "https://www.surunnuage.dev"
+    }
+  ],
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
